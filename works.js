@@ -30,22 +30,13 @@ fetch("works.csv")
             displayWorks();
         });
 
-         works.forEach(function(work) {
-            var card = document.createElement("article");
-            card.className = "work-card";
-            card.innerHTML = 
-                '<a href="' + work.link + '">' +
-                    '<img src="' + work.image + '" alt="' + work.title + '">' +
-                    '<h4>' + work.title + '</h4>' +
-                    '<p>' + work.description + '</p>' +
-                '</a>';
-            grid.appendChild(card);
+            displayWorks();
 
             var categories = [];
 
             works.forEach(function(work){
-            if(!categories.includes(work.category)){
-                categories.push(work.category);
+                if(!categories.includes(work.category)){
+                    categories.push(work.category);
             }
         });
 
@@ -69,7 +60,7 @@ fetch("works.csv")
 
             if (sortType === "new") {
                 filteredWorks.sort(function(a, b){
-                    return Number(b.ear) - Number(a.year);
+                    return Number(b.year) - Number(a.year);
                 });
             }
             else if (sortType === "old") {
@@ -96,11 +87,11 @@ fetch("works.csv")
                         '<p class="work-year">' + work.year + '</p>' +
                     '</div>' +
                 '</a>';
-            grid.appendchild(card);
+            grid.appendChild(card);
         })
                 };
             })
-    })
+
 
 
        

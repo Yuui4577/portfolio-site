@@ -7,7 +7,7 @@ a{
     text-decoration: none;
 }
 html{
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* 間違い指摘*/
     scroll-padding-top: 50px;
 }
 
@@ -21,10 +21,11 @@ header{
     background: #ffffff;
     height: 75px;
     top: 0;
+}
 nav a:hover {
     color: #9c9393
 }
-}
+
 nav{
     display: flex;
     gap: 28px;
@@ -56,6 +57,9 @@ footer{
     border: 1px solid #000000;
 }
 .work-card h4 {
+    margin: 15px 15px 5px;
+}
+.work-card p {
     margin: 0 15px 15px;
     font-size: 14px;
     line-height:1.6;
@@ -81,4 +85,18 @@ footer{
 .work-year {
     font-size: 10px;
     margin-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    #top {
+        padding-top: 80px;
+    }
+    
+    #top img {
+        width: 100%;
+    }
+
+    #works-grid {
+        flex-direction: column;
+    }
 }

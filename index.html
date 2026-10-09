@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="ja">
     <head>
-        <meta charset="UFT-8">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Yuichiro Kashiwagi</title>
         <link rel="stylesheet" href="style.css">
     </head>
@@ -35,14 +36,14 @@
             <section id="works" class="works">
                 <h3>works</h3>
                 <div class="works-controls">
-                    <section id="category">
+                    <select id="category">
                         <option value="all">すべてのカテゴリ</option>
-                    </section>
-                    <section id="sort">
+                    </select>
+                    <select id="sort">
                         <option value="new">新しい順</option>
                         <option value="old">古い順</option>
                         <option value="title">タイトル順</option>
-                    </section>
+                    </select>
                 </div>
                 <div id="works-grid"></div>
             </section>
@@ -50,7 +51,7 @@
         <footer>
             <span>ⓒ 2026 Yuichiro Kashiwagi</span>
         </footer>
-    <sclipt src="works.js"></sclipt>    
+        <script src="works.js"></script>    
     </body>
 </html>
 
