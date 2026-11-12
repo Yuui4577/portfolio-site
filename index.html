@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Yuichiro Kashiwagi</title>
         <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.min.js"></script>
     </head>
     <body>
         <header>
@@ -17,6 +18,7 @@
         <main>
             <section id="top">
                  <img src="./media/亀.jpg" width="80%">
+                 <div id="p5"></div>
                  <h1>
                     Yuichiro Kashiwagi<br>
                     portfolio
@@ -46,13 +48,20 @@
                         <option value="title">タイトル順</option>
                     </select>
                 </div>
+                <div class="work-card">
+                    <a href="banner-design.html">
+                        <img src="./media/banner1.jpg" width="300">
+                        <h4>バナーデザイン</h4>
+                    </a>
+                </div>
                 <div id="works-grid"></div>
             </section>
         </main>
         <footer>
             <span>ⓒ 2026 Yuichiro Kashiwagi</span>
         </footer>
-        <script src="works.js"></script>    
+        <script src="works.js"></script>   
+        <script src="sketch.js"></script> 
     </body>
 </html>
 
