@@ -20,7 +20,7 @@ fetch("works.csv")
 
         var sortSelect = document.getElementById("sort");
 
-        displayWorks();
+
 
         categorySelect.addEventListener("change", function(){
             displayWorks();
@@ -89,6 +89,7 @@ fetch("works.csv")
                 '</a>';
             grid.appendChild(card);
         })
+    
                 };
             })
 
